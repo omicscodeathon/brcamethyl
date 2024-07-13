@@ -21,7 +21,7 @@ Breast cancer ranks as the foremost cause of cancer-related mortality among wome
 ## Results
 
 ## Acknowledgement
-The authors thank the National Institutes of Health (NIH) Office of Data Science Strategy (ODSS) for their immense support before and during the April 2024 Omics codeathon organized in collaboration with the African Society for Bioinformatics and Computational Biology (ASBCB).
+The authors thank the National Institutes of Health (NIH) Office of Data Science Strategy (ODSS) for their immense support before and during the October 2024 Omics codeathon organized in collaboration with the African Society for Bioinformatics and Computational Biology (ASBCB).
 
 ## Team
 1. Jonathan Kalami
