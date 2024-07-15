@@ -17,6 +17,8 @@ Breast cancer ranks as the foremost cause of cancer-related mortality among wome
 ## Objectives
 
 ## Methods
+### Workflow
+![image](workflow/brcamethyl-workflow.PNG)
 
 ## Results
 
