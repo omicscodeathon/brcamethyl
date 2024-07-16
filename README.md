@@ -15,8 +15,14 @@ Breast cancer ranks as the foremost cause of cancer-related mortality among wome
 **DNA methylation** involves adding a methyl group to the DNA and plays a crucial role in regulating gene expression, maintaining genomic stability, and controlling cell differentiation (Moore et al., 2012). Aberrant DNA methylation patterns, such as the hypermethylation of tumour suppressor genes and hypomethylation of oncogenes, are characteristic features of cancer. These epigenetic alterations can result in gene silencing or activation, thereby contributing to tumorigenesis (Geissler et al., 2024). Elucidating these methylation changes offers valuable insights into the molecular mechanisms of breast cancer and can aid in identifying potential biomarkers for diagnosis, prognosis, and therapeutic targets (De Almeida et al., 2019).
 
 ## Objectives
+- To identify the methylation differences in the MCF-7 breast cancer cell line with UHRF1 gene knockout compared to controls.
+- To compare the global DNA methylation profiles between UHRF1-shRNA treated and scramble-shRNA treated MCF-7 cells.
+- To pinpoint specific differentially methylated regions (DMRs) associated with UHRF1 gene knockdown in the MCF-7 cell line.
+- To explore the potential impact of identified methylation changes on key oncogenic pathways and cellular processes in breast cancer.
 
 ## Methods
+Bisulphite mapping and methylation calling was performed on the whole genome bisulfite sequences (WGBS). Global methylation analysis was performed to compute the percent methylation of methylated sites. DMR analysis was then carried out on the bisulfite-seq.
+
 ### Workflow
 ![image](workflow/brcamethyl-workflow.PNG)
 
