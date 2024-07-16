@@ -1,0 +1,11 @@
+Steps: [Convert the steps into workflow diagram (include tools for each step) and update README.md]
+. Download whole genome bisulfite sequencing (WGBS) reads from SRA explorer
+. Perform quality control of sequence reads using FASTQC and MULTIQC
+. Trimming of adapter sequences and filtering of low quality reads from paired-end reads using Trimgalore
+. Indexing of human reference genome (hg38) using Bismark genome preparation tool and Bowtie2 pre genome alignment
+. Aligment/Mapping of WGBS dataset to the indexed hg38 genome using Bismark alignment tool
+. Deduplication after alignment to rid reads with multiple mapping positions using Bismark deduplication tool 
+. Use the Bismark Methylation extraction tool to call all methylated cytosines in the alignment file 
+. Generate summary report
+. Use the Integrative Genome Software to view the methylation levels using the bedGraph file
+. Perform Differential Methylation Analysis using DMRcate software
