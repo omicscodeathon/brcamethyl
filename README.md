@@ -1,4 +1,4 @@
-# Uncovering DNA Methylation Signatures in Breast Cancer: An In-silico Approach
+# Uncovering DNA Methylation Signatures and Differential Gene Expression in Breast Cancer: An In-silico Approach
 
 ## Table of Contents
 - [Background](#Background)
@@ -19,6 +19,8 @@ Breast cancer ranks as the foremost cause of cancer-related mortality among wome
 - To compare the global DNA methylation profiles between UHRF1-shRNA treated and scramble-shRNA treated MCF-7 cells.
 - To pinpoint specific differentially methylated regions (DMRs) associated with UHRF1 gene knockdown in the MCF-7 cell line.
 - To explore the potential impact of identified methylation changes on key oncogenic pathways and cellular processes in breast cancer.
+- To correlate DNA methylation changes with gene expression alterations to understand the epigenetic regulation by UHRF1 in breast cancer cells.
+
 
 ## Methods
 Bisulphite mapping and methylation calling was performed on the whole genome bisulfite sequences (WGBS). Global methylation analysis was performed to compute the percent methylation of methylated sites. DMR analysis was then carried out on the bisulfite-seq.
