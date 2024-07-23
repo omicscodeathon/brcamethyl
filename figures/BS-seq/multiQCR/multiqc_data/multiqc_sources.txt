@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR26949323_1	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949323_1_fastqc.zip
+FastQC	all_sections	SRR26949327_2	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949327_2_fastqc.zip
+FastQC	all_sections	SRR26949328_2	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949328_2_fastqc.zip
+FastQC	all_sections	SRR26949323_2	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949323_2_fastqc.zip
+FastQC	all_sections	SRR26949324_1	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949324_1_fastqc.zip
+FastQC	all_sections	SRR26949324_2	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949324_2_fastqc.zip
+FastQC	all_sections	SRR26949327_1	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949327_1_fastqc.zip
+FastQC	all_sections	SRR26949326_2	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949326_2_fastqc.zip
+FastQC	all_sections	SRR26949328_1	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949328_1_fastqc.zip
+FastQC	all_sections	SRR26949325_2	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949325_2_fastqc.zip
+FastQC	all_sections	SRR26949325_1	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949325_1_fastqc.zip
+FastQC	all_sections	SRR26949326_1	/home/jupyter/methylb/bsdataset/fastqc_reportsBS/SRR26949326_1_fastqc.zip
