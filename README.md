@@ -28,6 +28,8 @@ Bisulphite mapping and methylation calling was performed on the whole genome bis
 ### Workflow
 ![image](workflow/brcamethyl-workflow.PNG)
 
+![image](https://github.com/user-attachments/assets/a3a0f5db-8c22-42b3-9d9c-fd0d3182c41c)
+
 ## Results
 
 ## Acknowledgement
