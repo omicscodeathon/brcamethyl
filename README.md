@@ -26,8 +26,10 @@ Breast cancer ranks as the foremost cause of cancer-related mortality among wome
 Bisulphite mapping and methylation calling was performed on the whole genome bisulfite sequences (WGBS). Global methylation analysis was performed to compute the percent methylation of methylated sites. DMR analysis was then carried out on the bisulfite-seq.
 
 ### Workflow
+#### Methylation Pipeline 
 ![image](workflow/brcamethyl-workflow.PNG)
 
+#### Gene Expression Pipeline
 ![image](https://github.com/user-attachments/assets/a3a0f5db-8c22-42b3-9d9c-fd0d3182c41c)
 
 ## Results
