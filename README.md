@@ -43,8 +43,7 @@ The authors thank the National Institutes of Health (NIH) Office of Data Science
 3. Sala Kotochi
 4. Benthai Benjamin
 5. Benson Kidenya
-6. Felix Amekpor
-7. Olaitan I. Awe
+6. Olaitan I. Awe
 
 ## References
 1. De Almeida, B. P., Apolónio, J. D., Binnie, A., & Castelo-Branco, P. (2019). Roadmap of DNA methylation in breast cancer identifies novel prognostic biomarkers. BMC Cancer, 19(1). https://doi.org/10.1186/S12885-019-5403-0
