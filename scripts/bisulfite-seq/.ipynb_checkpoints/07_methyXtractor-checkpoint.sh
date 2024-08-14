@@ -16,3 +16,5 @@ bismark_methylation_extractor -p \
     --buffer_size 10G ${SAMPLE_DIR}/${SAMPLE}_1_val_1_bismark_bt2_pe.deduplicated.bam
 
 done
+
+
