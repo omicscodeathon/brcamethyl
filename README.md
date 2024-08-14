@@ -42,7 +42,7 @@ The authors thank the National Institutes of Health (NIH) Office of Data Science
 2. Miriam Eyram Lawson Gakpey
 3. Sala Kotochi
 4. Benthai Benjamin
-5. Benson Kidenya
+5. Benson R. Kidenya
 6. Olaitan I. Awe
 
 ## References
