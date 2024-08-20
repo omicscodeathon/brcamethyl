@@ -25,6 +25,7 @@ library(ggsci)
 #setting working directory
 setwd("/Users/jkalami/Desktop/ich/rnabrca/counts/")
 
+#cleaning the gene conunts Table
 countdata <- read.table("feature_Counts.txt", header = TRUE, skip = 1, row.names = 1)
 colnames(countdata) <- gsub(".bam", "", colnames(countdata), fixed = T)
 colnames(countdata) <- gsub("marked_dups.", "", colnames(countdata), fixed = T)
@@ -139,6 +140,9 @@ ann_colors = list(
   Replicate = c(Rep3 = "darkred", Rep2 = "forestgreen", Rep1 = "maroon")
 )
 
+#####
+OR
+####
 
 #################################
 col_data <- colData(ddsMat)
