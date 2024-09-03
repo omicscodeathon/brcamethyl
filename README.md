@@ -33,6 +33,11 @@ Bisulphite mapping and methylation calling was performed on the whole genome bis
 ![image](https://github.com/user-attachments/assets/a3a0f5db-8c22-42b3-9d9c-fd0d3182c41c)
 
 ## Results
+![image](https://github.com/user-attachments/assets/2e12bd16-86ec-4807-bda3-37bfcb56cd1a)
+#### Fig: Heatmap of displaying 50 most significant DEGs of both control and treatment group
+
+![image](https://github.com/user-attachments/assets/55e400eb-c3ce-48ff-a767-74551e0f06fd)
+#### Fig: Volcano plot of gene fold change and p-value
 
 ## Acknowledgement
 The authors thank the National Institutes of Health (NIH) Office of Data Science Strategy (ODSS) for their immense support before and during the October 2024 Omics codeathon organized in collaboration with the African Society for Bioinformatics and Computational Biology (ASBCB).
