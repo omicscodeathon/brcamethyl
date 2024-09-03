@@ -26,6 +26,7 @@ Breast cancer ranks as the foremost cause of cancer-related mortality among wome
 Bisulphite mapping and methylation calling was performed on the whole genome bisulfite sequences (WGBS). Global methylation analysis was performed to compute the percent methylation of methylated sites. DMR analysis was then carried out on the bisulfite-seq.
 
 ### Workflow
+
 #### Methylation Pipeline 
 ![image](workflow/brcamethyl-workflow.PNG)
 
@@ -33,11 +34,27 @@ Bisulphite mapping and methylation calling was performed on the whole genome bis
 ![image](https://github.com/user-attachments/assets/a3a0f5db-8c22-42b3-9d9c-fd0d3182c41c)
 
 ## Results
+
+![image](https://github.com/user-attachments/assets/a5e386dc-1ce6-4d04-99f6-217ca3bb1b14)
+#### Fig: PCA plot of top 500 most variable genes
+
+![image](https://github.com/user-attachments/assets/83b9876d-a564-4584-96d1-9f85fe26f2dc)
+#### Fig: MA plot
+
+![image](https://github.com/user-attachments/assets/87af7723-d018-4c86-8d3d-bd7d0e5a1279)
+#### Fig: Dispersion plot
+
 ![image](https://github.com/user-attachments/assets/2e12bd16-86ec-4807-bda3-37bfcb56cd1a)
 #### Fig: Heatmap of displaying 50 most significant DEGs of both control and treatment group
 
 ![image](https://github.com/user-attachments/assets/55e400eb-c3ce-48ff-a767-74551e0f06fd)
 #### Fig: Volcano plot of gene fold change and p-value
+
+![GOCC_brca](https://github.com/user-attachments/assets/b64e9a6d-b7d7-48fe-8149-b4cb631a624e)
+#### Fig: Gene ontology of cellular components 
+
+![image](https://github.com/user-attachments/assets/f39ae78d-c747-4b8e-8097-6932272eeafd)
+#### Fig: KEGG plot showing pathways that genes are enriched in
 
 ## Acknowledgement
 The authors thank the National Institutes of Health (NIH) Office of Data Science Strategy (ODSS) for their immense support before and during the October 2024 Omics codeathon organized in collaboration with the African Society for Bioinformatics and Computational Biology (ASBCB).
