@@ -1,4 +1,4 @@
-# Uncovering DNA Methylation Signatures and Differential Gene Expression in Breast Cancer: An In-silico Approach
+# Uncovering the Role of UHRF1-Mediated DNA Methylation and Gene Expression Alterations in Breast Cancer Metastasis and Drug Resistance: An In-silico Study
 
 ## Table of Contents
 - [Background](#Background)
