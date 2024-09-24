@@ -1,4 +1,4 @@
-# Uncovering the Role of UHRF1-Mediated DNA Methylation and Gene Expression Alterations in Breast Cancer Metastasis and Drug Resistance: An In-silico Study
+<h1 align="center"> Comparative Transcriptomic Analysis of UHRF1 Knockout in Different Cancer Cell Lines Reveals Gene Expression and Pathway Dysregulation </h1>
 
 ## Table of Contents
 - [Background](#Background)
@@ -10,25 +10,23 @@
 - [References](#References)
 
 ## Background
-Breast cancer ranks as the foremost cause of cancer-related mortality among women worldwide, comprising 12% of the global cancer burden (Sedeta et al., 2023). Its pathogenesis involves an intricate interplay between genetic and epigenetic alterations, with mounting evidence underscoring the pivotal role of DNA methylation in disease onset (Kanwal & Gupta, 2012; Thakur et al., 2022). 
+The **UHRF1** (ubiquitin-like with PHD and Ring Finger domains 1) protein is a critical epigenetic regulator involved in maintaining DNA methylation patterns and controlling chromatin dynamics. By interacting with both DNA methyltransferases and histone modifiers, UHRF1 plays a central role in the regulation of gene expression. Its dysregulation has been linked to cancer progression, contributing to uncontrolled cell proliferation, metastasis, and treatment resistance. However, the extent of UHRF1’s influence on global gene expression remains underexplored, particularly across different cancer types.
 
-**DNA methylation** involves adding a methyl group to the DNA and plays a crucial role in regulating gene expression, maintaining genomic stability, and controlling cell differentiation (Moore et al., 2012). Aberrant DNA methylation patterns, such as the hypermethylation of tumour suppressor genes and hypomethylation of oncogenes, are characteristic features of cancer. These epigenetic alterations can result in gene silencing or activation, thereby contributing to tumorigenesis (Geissler et al., 2024). Elucidating these methylation changes offers valuable insights into the molecular mechanisms of breast cancer and can aid in identifying potential biomarkers for diagnosis, prognosis, and therapeutic targets (De Almeida et al., 2019).
+This study aims to bridge that gap by conducting a comparative transcriptomic analysis of UHRF1 knockout in four cancer cell lines: retinoblastoma (Y79), breast cancer (MCF-7), and leukemia (Kasumi-1 and THP-1). Through this multi-cancer approach, we seek to uncover the specific gene expression changes and pathway disruptions induced by UHRF1 loss, providing insights into its role as a master regulator of oncogenic processes across distinct cancer types. 
 
 ## Objectives
-- To identify the methylation differences in the MCF-7 breast cancer cell line with UHRF1 gene knockout compared to controls.
-- To compare the global DNA methylation profiles between UHRF1-shRNA treated and scramble-shRNA treated MCF-7 cells.
-- To pinpoint specific differentially methylated regions (DMRs) associated with UHRF1 gene knockdown in the MCF-7 cell line.
-- To explore the potential impact of identified methylation changes on key oncogenic pathways and cellular processes in breast cancer.
-- To correlate DNA methylation changes with gene expression alterations to understand the epigenetic regulation by UHRF1 in breast cancer cells.
+### Main Objectives
+To elucidate the impact of UHRF1 knockout on global gene expression patterns in leukemia, retinoblastoma, and breast cancer cell lines.
+
+### Specific Objectives
+- To analyze and compare the differential gene expression profiles between UHRF1 knockout and control groups across leukemia, retinoblastoma, and breast cancer cell lines, identifying significantly upregulated and downregulated genes.
+- To identify key biological processes and molecular pathways impacted by UHRF1 knockout, while identifying candidate genes or pathways that could serve as biomarkers for cancer prognosis or therapeutic intervention.
 
 
 ## Methods
-Bisulphite mapping and methylation calling was performed on the whole genome bisulfite sequences (WGBS). Global methylation analysis was performed to compute the percent methylation of methylated sites. DMR analysis was then carried out on the bisulfite-seq.
+**RNA-seq** data was used to perform differential gene expression analysis between UHRF1 knockout and control groups across leukemia, retinoblastoma, and breast cancer cell lines. **Quality control**, **genome alignment**, and **gene quantification** was done using the following tools; **FastQC**, **STAR**, and **featureCounts** respecitively. Differential expression will be analyzed with **DESeq2**, followed by **Gene Set Enrrichment Analysis** using Gene Ontology (GO) and KEGG databases. 
 
 ### Workflow
-
-#### Methylation Pipeline 
-![image](workflow/brcamethyl-workflow.PNG)
 
 #### Gene Expression Pipeline
 ![image](https://github.com/user-attachments/assets/a3a0f5db-8c22-42b3-9d9c-fd0d3182c41c)
