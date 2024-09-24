@@ -32,8 +32,7 @@ To elucidate the impact of UHRF1 knockout on global gene expression patterns in 
 ![image](https://github.com/user-attachments/assets/a3a0f5db-8c22-42b3-9d9c-fd0d3182c41c)
 
 ## Results
-
-![image](https://github.com/user-attachments/assets/a5e386dc-1ce6-4d04-99f6-217ca3bb1b14)
+![pca-kas](https://github.com/user-attachments/assets/d23c9c86-8018-44f6-aab2-81d2aea18cbb)
 #### Fig: PCA plot of top 500 most variable genes
 
 ![image](https://github.com/user-attachments/assets/83b9876d-a564-4584-96d1-9f85fe26f2dc)
@@ -42,16 +41,16 @@ To elucidate the impact of UHRF1 knockout on global gene expression patterns in 
 ![image](https://github.com/user-attachments/assets/87af7723-d018-4c86-8d3d-bd7d0e5a1279)
 #### Fig: Dispersion plot
 
-![image](https://github.com/user-attachments/assets/2e12bd16-86ec-4807-bda3-37bfcb56cd1a)
+![brca-heatmap](https://github.com/user-attachments/assets/78cdd1cf-b7ef-453a-b753-2c003b115061)
 #### Fig: Heatmap of displaying 50 most significant DEGs of both control and treatment group
 
-![image](https://github.com/user-attachments/assets/55e400eb-c3ce-48ff-a767-74551e0f06fd)
+![volcano-plot-kasumi-1](https://github.com/user-attachments/assets/c6bcbdf0-d5c3-4390-88e6-89def56985cb)
 #### Fig: Volcano plot of gene fold change and p-value
 
-![GOCC_brca](https://github.com/user-attachments/assets/b64e9a6d-b7d7-48fe-8149-b4cb631a624e)
+![y79-go](https://github.com/user-attachments/assets/5895fe1b-74da-41ee-8a4e-eb9c63bef64c)
 #### Fig: Gene ontology of cellular components 
 
-![image](https://github.com/user-attachments/assets/f39ae78d-c747-4b8e-8097-6932272eeafd)
+![y79-kegg](https://github.com/user-attachments/assets/92beff5a-03a8-4bce-aa03-cd6ccf6da906)
 #### Fig: KEGG plot showing pathways that genes are enriched in
 
 ## Acknowledgement
