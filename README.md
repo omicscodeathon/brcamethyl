@@ -1,21 +1,24 @@
-<h1 align="center"> Comparative Transcriptomic Analysis of UHRF1 Knockout in Different Cancer Cell Lines Reveals Gene Expression and Pathway Dysregulation </h1>
+<h1 align="center"> Comparative Transcriptomic Analysis of UHRF1 Knockout in Different Cancer Cell Lines </h1>
 
 ## Table of Contents
-- [Project Overview)(#Project Overview)
+- [Project Overview](#Project-Overview)
 - [Objectives](#Objectives)
 - [Methods](#Methods)
-  - [Data Acquisition and Screening](#Data Acquisition and Screening)](#Data Acquisition and Screening)
-  - Data Preprocessing
-  - Differential Gene Expression Analysis Preprocessing
-  - Correlation of  Gene expression changes across the different cancer cell lines
-  - Identification of Protein-Protein Interactions among the Intersecting Genes
-  - Selection of Hub Genes
+  - [Data Acquisition and Screening]
+  - [Data Preprocessing]
+  - [Differential Gene Expression Analysis Preprocessing]
+  - [Correlation of  Gene expression changes across the different cancer cell lines]
+  - [Identification of Protein-Protein Interactions among the Intersecting Genes]
+  - [Selection of Hub Genes]
 - [Results](#Results)
-  - Analysis of Differentially Expressed Genes in Four Cancer Types
-  - Overlap analysis
-  - Correlation of Gene Expression Profiles Between Cancer Cell Lines After UHRF1 Knockout
-  - Gene Set Enrichment Analysis for Overlap DEGs
-  - Protein-Protein Interaction Network
+  - [Analysis of Differentially Expressed Genes in Four Cancer Types]
+  - [Overlap analysis]
+  - [Correlation of Gene Expression Profiles Between Cancer Cell Lines After UHRF1 Knockout]
+  - [Gene Set Enrichment Analysis for Overlap DEGs]
+  - [Protein-Protein Interaction Network]
+- [Conclusions](#Conclusions)
+- [Reccomendation](#Reccomendation)
+- [Usage](#Usage)
 - [Acknowledgment](#Acknowledgment)
 - [Team](#Team)
 - [References](#References)
@@ -36,15 +39,6 @@ To elucidate the impact of UHRF1 knockout on global gene expression patterns in 
 - To analyze and compare the differential gene expression profiles on the obtained cancer cell lines during UHR1 knockout
 - To identify commonly expressed genes during UHRF-1 knockout in leukemia, retinoblastoma, and breast cancer cell lines
 - To identify key biological processes, molecular pathways and protein-protein interactions(PPI) impacted by UHRF1 knockout
-
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/omicscodeathon/brcamethyl/UHRF1_Knockout_Cancer_Analysis.git
-2. 
-  pip install -r requirements.txt
-
-3. 
 
 
 ## Methods
@@ -89,7 +83,6 @@ The identification of commonly differentially expressed genes during UHRF1 downr
 **In vitro and in vivo studies** would be recommended to understand the molecular mechanisms by which UHRF1 influences these distinct processes across different cancer types. Specifically, it is important to look at how UHRF1-targeted therapies regulate these pathways 
 
 ## Usage
-
 This documentation and tutorials outline how to use the pipeline to perform analysis in this study. 
 
 
