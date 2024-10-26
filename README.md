@@ -1,26 +1,50 @@
 <h1 align="center"> Comparative Transcriptomic Analysis of UHRF1 Knockout in Different Cancer Cell Lines Reveals Gene Expression and Pathway Dysregulation </h1>
 
 ## Table of Contents
-- [Background](#Background)
+- [Project Overview)(#Project Overview)
 - [Objectives](#Objectives)
 - [Methods](#Methods)
+  - [Data Acquisition and Screening](#Data Acquisition and Screening)](#Data Acquisition and Screening)
+  - Data Preprocessing
+  - Differential Gene Expression Analysis Preprocessing
+  - Correlation of  Gene expression changes across the different cancer cell lines
+  - Identification of Protein-Protein Interactions among the Intersecting Genes
+  - Selection of Hub Genes
 - [Results](#Results)
+  - Analysis of Differentially Expressed Genes in Four Cancer Types
+  - Overlap analysis
+  - Correlation of Gene Expression Profiles Between Cancer Cell Lines After UHRF1 Knockout
+  - Gene Set Enrichment Analysis for Overlap DEGs
+  - Protein-Protein Interaction Network
 - [Acknowledgment](#Acknowledgment)
 - [Team](#Team)
 - [References](#References)
+  
+## Project Overview
 
-## Background
-The **UHRF1** (ubiquitin-like with PHD and Ring Finger domains 1) protein is a critical epigenetic regulator involved in maintaining DNA methylation patterns and controlling chromatin dynamics. By interacting with both DNA methyltransferases and histone modifiers, UHRF1 plays a central role in the regulation of gene expression. Its dysregulation has been linked to cancer progression, contributing to uncontrolled cell proliferation, metastasis, and treatment resistance. However, the extent of UHRF1’s influence on global gene expression remains underexplored, particularly across different cancer types.
-
-This study aims to bridge that gap by conducting a comparative transcriptomic analysis of UHRF1 knockout in four cancer cell lines: retinoblastoma (Y79), breast cancer (MCF-7), and leukemia (Kasumi-1 and THP-1). Through this multi-cancer approach, we seek to uncover the specific gene expression changes and pathway disruptions induced by UHRF1 loss, providing insights into its role as a master regulator of oncogenic processes across distinct cancer types. 
+The **UHRF1 (ubiquitin-like with PHD and Ring Finger domains 1)** gene is an important epigenetic regulator that plays a key role in modulating DNA methylation patterns and chromatin structure. 
+The UHRF1 gene plays a critical role in cancer progression. Overexpression of UHRF1 has been studied to promote tumorigenesis through different mechanisms, while its knockdown is known to hinder cancer cell migration and induce apoptosis as described in the figure below. ​​The UHRF1 protein has gained considerable attention as a potential biomarker and key regulator in various cancers, though its precise role across different cancer types remains unclear. 
+This study thus aims to determine whether UHRF1 downregulation can disrupt common tumor-promoting pathways and simultaneously activate pathways that suppress tumorigenesis in different cancer types. Identifying these mechanisms could reveal new biomarkers and therapeutic targets, expanding treatment options for cancer. 
+To do this we analyzed publicly available datasets from Gene Expression Omnibus (GEO) containing RNA sequencing data on cancer cell lines with UHRF1 gene knockout (retinoblastoma (Y79), breast cancer (MCF-7), monocytic leukemia (Kasumi-1) and myeloid leukemia (THP). We performed differential gene expression and gene set enrichment analysis to assess differentially expressed genes (DEGs) and pathway dysregulation resulting from UHRF1 loss. Gene overlap analysis for the detection of shared DEGs across all cell lines was performed, and these shared DEGs were further investigated for functional enrichment and protein-protein interaction. 
 
 ## Objectives
 ### Main Objectives
 To elucidate the impact of UHRF1 knockout on global gene expression patterns in leukemia, retinoblastoma, and breast cancer cell lines.
 
 ### Specific Objectives
-- To analyze and compare the differential gene expression profiles between UHRF1 knockout and control groups across leukemia, retinoblastoma, and breast cancer cell lines, identifying significantly upregulated and downregulated genes.
-- To identify key biological processes and molecular pathways impacted by UHRF1 knockout, while identifying candidate genes or pathways that could serve as biomarkers for cancer prognosis or therapeutic intervention.
+- To perform differential expression analysis of UHRF-1 knockout data obtained from GEO database for leukemia, retinoblastoma, and breast cancer cell lines 
+- To analyze and compare the differential gene expression profiles on the obtained cancer cell lines during UHR1 knockout
+- To identify commonly expressed genes during UHRF-1 knockout in leukemia, retinoblastoma, and breast cancer cell lines
+- To identify key biological processes, molecular pathways and protein-protein interactions(PPI) impacted by UHRF1 knockout
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/omicscodeathon/brcamethyl/UHRF1_Knockout_Cancer_Analysis.git
+2. 
+  pip install -r requirements.txt
+
+3. 
 
 
 ## Methods
@@ -53,6 +77,22 @@ To elucidate the impact of UHRF1 knockout on global gene expression patterns in 
 ![y79-kegg](https://github.com/user-attachments/assets/92beff5a-03a8-4bce-aa03-cd6ccf6da906)
 #### Fig: KEGG plot showing pathways that genes are enriched in
 
+## Key findings
+- Our analysis revealed distinct patterns of differentially expressed genes (DEGs) in each cancer type, with Y79, Kasumi-1, THP-1, and MCF-7 showing varying numbers of DEGs after UHRF1 knockout. 
+- Gene overlap analysis identified 80 DEGs across all four cancer types and highlighted critical regulatory pathways 
+- PPI network analysis with the 80 overlapping genes revealed 5 key functional genes GPI, SOD2, HSPD1, TXNRD1, and GLUL across the understudy cancer types during UHRF1 knockout.
+
+## Conclusions 
+The identification of commonly differentially expressed genes during UHRF1 downregulation is essential for understanding pathways affecting cancer cell survival in UHRF1-targeted therapies. Our study found that certain genes, including GPI, SOD2, HSPD1, TXNRD1, and GLUL, were activated across cancer types during UHRF1 knockout. These genes’ upregulation, linked to poor prognosis in prior studies, suggests that while UHRF1 knockdown may sometimes improve prognosis, this adaptive gene response might reduce its overall therapeutic benefit. These findings raise important questions about the complexity of UHRF1-targeted cancer treatments.
+
+## Recommendations
+**In vitro and in vivo studies** would be recommended to understand the molecular mechanisms by which UHRF1 influences these distinct processes across different cancer types. Specifically, it is important to look at how UHRF1-targeted therapies regulate these pathways 
+
+## Usage
+
+This documentation and tutorials outline how to use the pipeline to perform analysis in this study. 
+
+
 ## Acknowledgement
 The authors thank the National Institutes of Health (NIH) Office of Data Science Strategy (ODSS) for their immense support before and during the October 2024 Omics codeathon organized in collaboration with the African Society for Bioinformatics and Computational Biology (ASBCB).
 
@@ -63,6 +103,7 @@ The authors thank the National Institutes of Health (NIH) Office of Data Science
 4. Benthai Benjamin
 5. Benson R. Kidenya
 6. Olaitan I. Awe
+
 
 ## References
 1. De Almeida, B. P., Apolónio, J. D., Binnie, A., & Castelo-Branco, P. (2019). Roadmap of DNA methylation in breast cancer identifies novel prognostic biomarkers. BMC Cancer, 19(1). https://doi.org/10.1186/S12885-019-5403-0
