@@ -30,6 +30,7 @@ This study thus aims to determine whether UHRF1 downregulation can disrupt commo
 To do this we analyzed publicly available datasets from Gene Expression Omnibus (GEO) containing RNA sequencing data on cancer cell lines with UHRF1 gene knockout (retinoblastoma (Y79), breast cancer (MCF-7), monocytic leukemia (Kasumi-1) and myeloid leukemia (THP). We performed differential gene expression and gene set enrichment analysis to assess differentially expressed genes (DEGs) and pathway dysregulation resulting from UHRF1 loss. Gene overlap analysis for the detection of shared DEGs across all cell lines was performed, and these shared DEGs were further investigated for functional enrichment and protein-protein interaction. 
 
 ![image](figures/RNA-seq/plots/Introduction.jpg)
+
 Regulation of UHRF-1 gene and its implication in cancer.
 
 ## Objectives
