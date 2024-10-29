@@ -29,7 +29,7 @@ The UHRF1 gene plays a critical role in cancer progression. Overexpression of UH
 This study thus aims to determine whether UHRF1 downregulation can disrupt common tumor-promoting pathways and simultaneously activate pathways that suppress tumorigenesis in different cancer types. Identifying these mechanisms could reveal new biomarkers and therapeutic targets, expanding treatment options for cancer. 
 To do this we analyzed publicly available datasets from Gene Expression Omnibus (GEO) containing RNA sequencing data on cancer cell lines with UHRF1 gene knockout (retinoblastoma (Y79), breast cancer (MCF-7), monocytic leukemia (Kasumi-1) and myeloid leukemia (THP). We performed differential gene expression and gene set enrichment analysis to assess differentially expressed genes (DEGs) and pathway dysregulation resulting from UHRF1 loss. Gene overlap analysis for the detection of shared DEGs across all cell lines was performed, and these shared DEGs were further investigated for functional enrichment and protein-protein interaction. 
 
-![image](Figures/Introduction.jpg)
+![image](figures/Introduction.jpg)
 Regulation of UHRF-1 gene and its implication in cancer.
 
 ## Objectives
@@ -79,12 +79,12 @@ The image below describes the analysis pipeline used in this study.
 ### Results 
 #### Analysis of Differentially Expressed Genes in Four Cancer Types
 We analyzed differential gene expression in cancer cell lines to assess UHRF1 knockout effects. The volcano plot illustrated in Figure 1 shows significant gene expression changes, with genes showing a p-value ≤ 0.05 and a log2 fold change ≥ 1 considered differentially expressed. Results revealed 2009 DEGs in MCF-7 (969 upregulated, 1040 downregulated), 3008 in Y79 (1436 upregulated, 1572 downregulated), 5302 in Kasumi-1 (2384 upregulated, 2918 downregulated), and 3183 in THP-1 (1354 upregulated, 1829 downregulated). 
-![image](Figures/Volcanoplots)
+![image](figures/Volcanoplots)
 ##### Fig 1. Volcano plot of differential gene expression analysis. a, Acute Monocytic Leukemia cell line THP-1, b, Acute Myeloid Leukemia cell line Kasumi-1, c, Retinoblastoma cell line Y79 and d, Breast cancer cell line MCF-7.  The x-axis represents log2 fold changes in gene expression, and the y-axis represents -log10P. The plot shows significantly upregulated and downregulated genes with the red, blue, and black dots representing DEGs that passed both log2 fold change and p-value cutoff, DEGs that passed only p-value cutoff, and insignificant DEGs respectively. 
 
 
 The heatmap generated using the R package pheatmap, illustrates the expression levels of the 50 most significant differentially expressed genes (DEGs) across four cancer cell lines: Kasumi-1 (acute myeloid leukemia), THP-1 (acute monocytic leukemia), Y79 (retinoblastoma), and MCF-7 (breast cancer), alongside their corresponding control groups. In the heatmap, individual genes are shown as rows, while the columns represent each sample, with a color scale indicating log2-fold change values that reflect gene regulation. Hierarchical clustering was applied to both genes and samples, revealing distinct expression patterns associated with UHRF1 knockout treatment. Notably, genes that clustered together exhibited coordinated expression changes, suggesting potential functional relationships linked to the treatment condition.
-![image](Figures/Heatmap)
+![image](figures/Heatmap)
 ##### Fig 2. A heatmap of 50 DEGs highlighted expression patterns across treatment and control groups (Fig 2)
 
 
@@ -92,14 +92,14 @@ The heatmap generated using the R package pheatmap, illustrates the expression l
 #### Overlap analysis
 We analyzed overlapping DEGs among four cancer cell lines to identify shared expression patterns. A Venn diagram illustrated the extent of overlap, revealing each cell line’s distinct DEG set while highlighting commonalities. Pairwise comparisons between cell lines helped us examine associations between gene expression profiles for each cancer phenotype, with Fisher's Exact Test yielding highly significant p-values (< 2.2e-16) across all comparisons. This indicated a strong association in gene expression changes across different cancers. When analyzing the combined dataset of all four cancer phenotypes, the significant p-value confirmed consistent shared DEGs, underlining potential common pathways influenced by UHRF1 knockout across diverse cancers.
 
-![image](Figures/Overlap_Analysis)
+![image](figures/Overlap_Analysis)
 ##### Fig 3. The Venn diagram displays the overlap of DEGs across four cancer cell lines: breast cancer (MCF-7), retinoblastoma (Y79), acute myeloid leukemia (Kasumi-1), and acute monocytic leukemia (THP-1). Each section represents the DEGs for one cancer type, with intersecting areas highlighting genes shared between two or more phenotypes.
 
 
 #### Correlation of Gene Expression Profiles Between Cancer Cell Lines After UHRF1 Knockout
 The Pearson correlation analysis on the log2 fold changes of 80 overlapping genes across four cancer cell lines (MCF7, Y79, Kasumi1, THP1) showed that the highest correlation was between THP1 and Kasumi1 (r = 0.649), suggesting significant gene expression overlap. MCF7 and Kasumi1 showed a moderate correlation (r = 0.301), while MCF7 had weak correlations with THP1 (r = 0.220) and nearly none with Y79 (r = -0.022). Y79 generally showed low correlations with other lines, indicating distinct expression dynamics across the cell lines, with THP1 and Kasumi1 being the most similar.
-![image](Figures/Overlap_Analysis)
-##### Fig 3. Overlap of Differentially Expressed Genes Across all Four Cancer Cell lines. The Venn diagram illustrates the overlap of differentially expressed genes (DEGs) between the breast cancer (MCF-7), retinoblastoma (Y79), Acute Myeloid Leukemia (Kasumi-1), and Acute Monocytic Leukemia (THP-1) cell lines. Each set represents the DEGs identified for a specific cancer phenotype, with intersecting regions showing shared genes between two or more phenotypes. 
+![image](figures/Correlation_Analysis)
+##### Fig 4. Overlap of Differentially Expressed Genes Across all Four Cancer Cell lines. The Venn diagram illustrates the overlap of differentially expressed genes (DEGs) between the breast cancer (MCF-7), retinoblastoma (Y79), Acute Myeloid Leukemia (Kasumi-1), and Acute Monocytic Leukemia (THP-1) cell lines. Each set represents the DEGs identified for a specific cancer phenotype, with intersecting regions showing shared genes between two or more phenotypes. 
 
 
 #### Gene Set Enrichment Analysis for Overlap DEGs
@@ -112,10 +112,10 @@ The gene ontology (GO) enrichment analysis on the 80 overlapping DEGs from the f
 #### Protein-Protein Interaction Network
 The protein-protein interaction analysis of the 80 common genes revealed a network with 79 nodes and 42 edges, indicating that 37 genes had no interactions within this network. These interactions may contribute to common biological processes across various cancer types during UHRF1 knockout. Utilizing the MCC ranking from the cytoHubba plugin, we identified the top five hub genes: Glucose-6-phosphate 1-dehydrogenase (GPI), Superoxide dismutase 2 (SOD2), Glutamine Synthetase (GLUL), Heat shock protein D1 (HSPD1), and Thioredoxin reductase 1 (TXNRD1), with GLUL and SOD2 exhibiting the highest functional interactions. All enriched GO terms associated with the overlapping DEGs were categorized into Biological Processes (BP), Cellular Components (CC), and Molecular Functions (MF), emphasizing the biological relevance of the protein-protein interactions. Significant biological processes included organic substance transport and positive regulation of apoptotic processes, while the active cellular locations were primarily the cytoplasm and membrane-enclosed lumen, with protein binding identified as the main molecular function attributed to these interactions.
 
-![image](Figures/PPI)
+![image](figures/PPI)
 ##### Fig 5. The nodes (small circles), represent the protein product of the 80 shared genes, and their interactions with other proteins in the network are connected by edges (lines). The edges vary in thickness indicating the strength of the interaction. Yellow colored nodes indicate the hub genes within the network.
 
-![image](Figures/Hub_genes)
+![image](figures/Hub_genes)
 ##### Fig 6. Hub genes in PPI network. The top 5 hub genes (TXNRD1, SOD2, GPI, HSPD1, and GLUL) were selected based on their MCC score with varying colors ranging from light-yellow to light-brown. As the colors darken, the MCC score increases, reflecting the strength of the functional interaction between the proteins in the network. 
 
 
